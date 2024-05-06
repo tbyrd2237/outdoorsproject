@@ -19,6 +19,7 @@ window.onload = function () {
 }
 //Function to Display the Data
 function displayData(event) {
+    document.querySelector(".container").style.display = "block";
     //Select the Card 
     let card = document.getElementById("card");
     let selectedElement = event.target.getAttribute("data-value");

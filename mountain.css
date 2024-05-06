@@ -1,0 +1,14 @@
+.header-text {
+    text-align: center;
+    padding-left: 10%;
+}
+
+.main-dropdown {
+    padding-left: 45%;
+    padding-top: 2%;
+}
+
+.container {
+    display: none;
+    padding-left: 45%;
+}
