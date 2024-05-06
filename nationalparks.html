@@ -39,16 +39,22 @@
               </div>
             </div>
         </nav>
-        <!-- <img class="dollar-sign" src="homepage-image1.jpg" alt="Dollar Signs"> -->
     </header>
 
     <!-- Example: Main Content -->
     <main>
+      <p>Sort by Location or by Park Type:</p>
+      <div id="searchType">
+        <input type="radio" id="location" name="searchType" value="location" checked>
+        <label for="location">Search by Location</label><br>
+        <input type="radio" id="parkType" name="searchType" value="parkType">
+        <label for="parkType">Search by Park Type</label>
+    </div>
       <br>
-      <p>Sort by Location</p>
+      <p>Sort the National Parks</p>
       <div class="dropdown">
         <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-          Select a Location
+          Select an Option
         </button>
         <ul class="dropdown-menu" id="dropdown-menu">
           <li><a class="dropdown-item" value=""></a></li>
