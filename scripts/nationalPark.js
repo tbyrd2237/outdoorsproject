@@ -75,3 +75,16 @@ function displayParkType(selectedElement) {
         cell2.textContent = item.City;
     });
 }
+
+function displayAllParks(){
+    let table = document.getElementById("table");
+    
+    nationalParksArray.forEach(item => {
+        let row = table.insertRow();
+        let cell1 = row.insertCell();
+        let cell2 = row.insertCell();
+        cell1.textContent = item.LocationName;
+        cell2.textContent = item.City;
+    });
+
+}

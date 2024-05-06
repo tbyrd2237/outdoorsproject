@@ -13,7 +13,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
-    <!-- Example: Header -->
     <header>
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
@@ -40,16 +39,17 @@
             </div>
         </nav>
     </header>
-
-    <!-- Example: Main Content -->
     <main>
       <p>Sort by Location or by Park Type:</p>
       <div id="searchType">
-        <input type="radio" id="location" name="searchType" value="location" checked>
+        <input type="radio" id="location" name="searchType" value="location">
         <label for="location">Search by Location</label><br>
         <input type="radio" id="parkType" name="searchType" value="parkType">
         <label for="parkType">Search by Park Type</label>
+        <input type="radio" id="allParks" name="searchType" value="allParks">
+        <label for="allParks">Display All National Parks</label>
     </div>
+    <br>
       <br>
       <p>Sort the National Parks</p>
       <div class="dropdown">
@@ -80,9 +80,7 @@
       </table>
     </main>
     <footer>
-        <!-- Footer content goes here -->
     </footer>
-    <!-- Link to your custom JavaScript file -->
     <script type="module" src="scripts/nationalPark.js"></script>
 </body>
 </html>
