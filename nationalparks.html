@@ -13,8 +13,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
-    <!-- Your content goes here -->
-    
     <!-- Example: Header -->
     <header>
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
@@ -47,19 +45,38 @@
     <!-- Example: Main Content -->
     <main>
       <br>
+      <p>Sort by Location</p>
       <div class="dropdown">
         <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-          Select an Option
+          Select a Location
         </button>
         <ul class="dropdown-menu" id="dropdown-menu">
           <li><a class="dropdown-item" value=""></a></li>
         </ul>
       </div>
+      <br>
+      <table class="table" id="table">
+        <thead>
+          <tr>
+            <th scope="col">Name</th>
+            <th scope="col">City</th>
+            <th scope="col">State</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row"></th>
+            <td id="name" value=""></td>
+            <td id="city" value=""></td>
+            <td id="state" value=""></td>
+          </tr>
+        </tbody>
+      </table>
     </main>
     <footer>
         <!-- Footer content goes here -->
     </footer>
     <!-- Link to your custom JavaScript file -->
-    <script src="scripts/locationData.js"></script>
+    <script type="module" src="scripts/nationalPark.js"></script>
 </body>
 </html>

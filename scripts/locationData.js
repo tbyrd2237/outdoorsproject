@@ -1,4 +1,4 @@
-const locationsArray = [
+export const locationsArray = [
     "Alabama",
     "Alaska",
     "American Samoa",
@@ -55,26 +55,3 @@ const locationsArray = [
     "Wisconsin",
     "Wyoming"
 ]
-
-
-//When the page loads, call the function to populate the dropdown menu
-window.onload = dropdownMenu;
-
-//Create a Function to Populate the Dropdown Menu
-function dropdownMenu(){
-    //Get the Dropdown Element *getElementById*
-    let dropdown = document.getElementById("dropdown-menu");
-    //clear the existing options
-    dropdown.innerHTML = "";
-
-    //Add New Options to the Dropdown
-        //Iterate Each Element in the Array
-        for (let i = 0; i < locationsArray.length; i++){
-            //Create a New Option Element (createElement)
-            let option = document.createElement("option");
-            //Set the Text Content of the Option Element
-            option.textContent = locationsArray[i];
-            //Append the option to the dropdown menu
-            dropdown.appendChild(option);
-        }
-}
