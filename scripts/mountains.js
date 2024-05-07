@@ -40,14 +40,14 @@ function displayData(event) {
         let element = document.getElementById("description");
 
         //Define the New Text
-        let newText = "Description: " + description;
+        let newText = description;
 
         //Set the Text to the Element
         element.textContent = newText;
 
         //ELEVATION
         let elevation = document.getElementById("elevation");
-        let elevationText = "Elevation: " + item.elevation;
+        let elevationText = "Elevation: " + item.elevation + " Feet";
         elevation.textContent = elevationText;
 
         //IMAGE
@@ -66,6 +66,13 @@ function displayData(event) {
 
     // Fetch the sunset/sunrise times for a specific mountain
     getSunsetForMountain(item.lat, item.lng).then(data => {
+        // Formatting options for time only
+        const options = {
+            hour: 'numeric', // '2-digit', 'numeric'
+            minute: '2-digit', // 'numeric'
+            hour12: true // to display in 12-hour format
+        };
+
         //Sunrise
         let sunrise = document.getElementById("sunrise");
         let sunriseText = "Sunrise: " + data.results.sunrise;
@@ -73,7 +80,7 @@ function displayData(event) {
 
         //Sunrise
         let sunset = document.getElementById("sunset");
-        let sunsetText = "Sunset: " + data.results.sunset;
+        let sunsetText = "Sunset: " + (data.results).sunset.toLocaleString('en-US', options);
         sunset.textContent = sunsetText;
     });
 

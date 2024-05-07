@@ -1,0 +1,36 @@
+.header-text {
+    text-align: center;
+    padding-left: 10%;
+}
+
+.container {
+    display: none;
+    padding-left: 45%;
+}
+
+.image-formatting {
+    padding-bottom: 1%;
+}
+
+
+.dropdown-menu {
+    margin-left: 45%;
+}
+
+.main-dropdown {
+    margin-left: 45%;
+    padding-bottom: 1%;
+}
+
+.dropdown {
+    width: 200%; /* Adjust as needed */
+}
+
+/* #sunrise, #sunset {
+    display: inline-block;
+    align-items: space-between;
+} */
+
+#sunrise {
+    padding-right: 6%;
+}

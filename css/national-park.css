@@ -1,0 +1,28 @@
+.radio-buttons {
+    padding-left: 40%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    padding-left: 40%;
+    padding-top: 2%;
+}
+
+#searchType input[type="radio"] {
+    margin-right: 10px; 
+}
+
+#searchType label {
+    margin-right: 20px; 
+}
+
+.dropdown-formatting {
+    padding-left: 40%;
+    padding-top: 1%;
+}
+
+.border-box {
+    border: 1px solid black !important;
+    padding: 1% !important;
+    overflow: auto;
+    margin-top: 1%;
+}
