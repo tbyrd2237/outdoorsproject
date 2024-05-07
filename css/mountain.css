@@ -23,13 +23,8 @@
 }
 
 .dropdown {
-    width: 200%; /* Adjust as needed */
+    width: 200%; 
 }
-
-/* #sunrise, #sunset {
-    display: inline-block;
-    align-items: space-between;
-} */
 
 #sunrise {
     padding-right: 6%;
