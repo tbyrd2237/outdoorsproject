@@ -42,7 +42,7 @@ function displayData(event) {
         } else if (searchType === "parkType"){
             displayParkType(selectedElement);
         } else if (searchType === "allParks") {
-        displayAllParks();
+            displayAllParks();
         }
     }   
     }
